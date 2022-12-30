@@ -1,0 +1,10 @@
+$theme-color: red !default;
+
+/* Overrides ElementPlus brand color */
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": (
+      "base": $theme-color,
+    ),
+  )
+);
